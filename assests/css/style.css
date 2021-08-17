@@ -1,0 +1,353 @@
+@import url(reset.css);
+@import url(font_family.css);
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+body {
+    color: #fff;
+}
+.container-1 {
+    background: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.8) 0,
+            rgba(0, 0, 0, 0) 60%,
+            rgba(0, 0, 0, 0.8) 100%
+        ),
+        url(../images/bg.jpg);
+    background-size: cover;
+    height: 700px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+.menu {
+    display: flex;
+    margin: 10px;
+    padding: 15px;
+    color: #fff;
+}
+.language-selector {
+    background: black;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+}
+.menu-btn {
+    margin: 10px 15px 10px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    width: 114px;
+}
+.btn-sign-in {
+    color: #fff;
+    padding: 13px 25px;
+    text-decoration: none;
+    border: none;
+}
+.btn-danger {
+    background-color: #e20712;
+}
+hr {
+    border: 5px solid #222;
+}
+.container-1 {
+    display: flex;
+    padding-bottom: 250px;
+    margin-top: -115px;
+}
+.first {
+    margin: auto;
+    text-align: center;
+    padding: 150px 30px 30px 30px;
+    line-height: initial;
+}
+.left {
+    margin: auto;
+    /* padding: 150px; */
+}
+.main-header-text {
+    font-size: 50px;
+    max-width: 585px;
+    font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: auto;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.main-header-description {
+    font-size: 26px;
+    font-weight: 40px;
+    margin-top: 10px;
+    width: 540px;
+    font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* margin: 20px auto; */
+    font-weight: 400;
+    line-height: normal;
+}
+.sub-title {
+    margin: 20px auto;
+}
+.description {
+    font-size: 19px;
+    margin: 20px;
+    font-weight: 400;
+    font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: auto;
+    padding-bottom: 20px;
+}
+.search-button {
+    padding: 20px;
+    border: none;
+}
+.form-group {
+    display: flex;
+    justify-content: center;
+
+    margin: 15px;
+}
+.form-control {
+    position: relative;
+}
+input[type="text"],
+input[type="password"] {
+    width: 450px;
+    font-size: 16px;
+    height: 33px;
+    cursor: pointer;
+    padding: 20px;
+    border: none;
+}
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    height: 20px;
+    border-radius: 5px;
+}
+
+label {
+    position: absolute;
+    color: #8c8c8c;
+    top: 25px;
+    left: 10px;
+}
+
+.search-button {
+    color: #fff;
+    font-size: 26px;
+}
+input[type="text"]:focus ~ label,
+input[type="text"]:valid ~ label,
+input[type="password"]:focus ~ label,
+input[type="password"]:valid ~ label {
+    font-size: 1em;
+    left: 20px;
+    top: 10px;
+    border-radius: 20px;
+}
+.container-2 {
+    background: black;
+}
+.second {
+    display: flex;
+    padding: 80px;
+}
+
+.img-1 {
+    position: relative;
+    z-index: 1;
+}
+.video-1 {
+    position: absolute;
+    top: 1150px;
+    right: 164px;
+}
+
+.container-3 {
+    background: black;
+}
+.third {
+    display: flex;
+    padding: 80px;
+}
+.right {
+    position: relative;
+}
+.media {
+    position: absolute;
+    right: 80px;
+    top: 110px;
+}
+.third .left {
+    padding: 50px;
+}
+.img-card {
+    position: absolute;
+    background: black;
+    border: 2px solid grey;
+    padding: 15px;
+    display: flex;
+    height: 60px;
+    width: 386px;
+    margin: auto;
+    border-radius: 12px;
+    padding: 20px;
+    left: 120px;
+    top: 330px;
+}
+.book-title {
+    position: relative;
+    font-size: 20px;
+}
+.f-blue {
+    color: blue;
+}
+.container-4,
+.container-5,
+.container-6,
+footer {
+    background: black;
+}
+.img-3 {
+    position: relative;
+    z-index: 1;
+}
+.video-3 {
+    position: absolute;
+    left: 98px;
+    top: 23px;
+    width: 435px;
+}
+.m-t-20 {
+    margin-top: 20px;
+}
+.p-20 {
+    padding: 20px;
+}
+.faq-header {
+    text-align: center;
+}
+.faq-header .main-header-text {
+    display: inline;
+}
+.container-6,
+footer {
+    padding: 80px;
+}
+.footer {
+    padding: 10px 10px 10px 150px;
+    color: #757575;
+}
+.faq-container {
+    margin: 40px;
+}
+.list {
+    list-style: none;
+}
+.footer-list {
+    display: flex;
+    justify-content: space-around;
+    /* list-style: none; */
+}
+.contact-no {
+    margin: 10px;
+}
+
+td {
+    padding: 20px 180px 20px 20px;
+}
+
+.footer .language-selector {
+    color: #757575;
+}
+.faq {
+    width: 900px;
+    margin: auto;
+}
+.faq .question,
+.faq .answer {
+    padding: 0.8em 2.2em 0.8em 1.2em;
+    background: #303030;
+    margin-top: 5px;
+    margin-bottom: 1px;
+    font-size: 26px;
+    font-weight: 400;
+}
+.faq .answer {
+    padding: 1.2em;
+    font-size: 1.625rem;
+    line-height: 2rem;
+}
+.error {
+    display: block;
+    text-align: initial;
+    padding-left: 15px;
+}
+.question {
+    display: flex;
+    justify-content: space-between;
+}
+.answer {
+    display: none;
+}
+.question-answer {
+    margin: 15px;
+}
+.sign-in-form {
+    background: rgba(0, 0, 0, 0.75);
+    padding: 60px 30px;
+    margin-top: 170px;
+}
+.left {
+    text-align: left;
+}
+.input-container {
+    padding-bottom: 50px;
+}
+.btn-login {
+    width: 95%;
+    background: red;
+    color: #fff;
+    font-weight: 600;
+    padding: 11px 7px 7px 7px;
+    text-align: center;
+    font-size: 25px;
+}
+.input-help {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+form {
+    margin-bottom: 70px;
+}
+.other-option {
+    font-size: 17px;
+    text-align: left;
+    color: grey;
+}
+.m-10 {
+    margin: 10px;
+}
+.facebook-login {
+    display: flex;
+    font-size: 20px;
+}
+.facebook-logo {
+    margin-right: 10px;
+}
+.f-25 {
+    font-size: 25px;
+}
+.sign-up-link {
+    text-decoration: none;
+    color: white;
+}
+.sign-up-link:hover,
+.learn-more:hover {
+    text-decoration: underline blue;
+}
+.learn-more {
+    color: blue;
+}
