@@ -1,12 +1,70 @@
 @import url(reset.css);
 @import url(font_family.css);
-* {
-    padding: 0;
-    margin: 0;
-    font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-face {
+    font-family: "Netflix Sans";
+    font-weight: 100;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2)
+            format("woff2"),
+        url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff)
+            format("woff");
+}
+
+@font-face {
+    font-family: "Netflix Sans";
+    font-weight: 300;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2)
+            format("woff2"),
+        url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff)
+            format("woff");
+}
+
+@font-face {
+    font-family: "Netflix Sans";
+    font-weight: 400;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2)
+            format("woff2"),
+        url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff)
+            format("woff");
+}
+
+@font-face {
+    font-family: "Netflix Sans";
+    font-weight: 700;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2)
+            format("woff2"),
+        url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff)
+            format("woff");
+}
+
+@font-face {
+    font-family: "Netflix Sans";
+    font-weight: 800;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2)
+            format("woff2"),
+        url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff)
+            format("woff");
+}
+
+@font-face {
+    font-family: "Netflix Sans";
+    font-weight: 900;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2)
+            format("woff2"),
+        url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff)
+            format("woff");
 }
 body {
     color: #fff;
+}
+hr {
+    padding: 0;
+    margin: 0;
 }
 .container-1 {
     background: linear-gradient(
@@ -22,6 +80,15 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
+    margin: 2px 20px;
+}
+.netflix-icon-container {
+    margin: 10px;
+    padding: 15px;
+}
+.icon-netflix-logo {
+    height: 50px;
+    fill: red;
 }
 .menu {
     display: flex;
@@ -29,24 +96,12 @@ body {
     padding: 15px;
     color: #fff;
 }
-.language-selector {
-    background: black;
-    color: #fff;
-    font-weight: 600;
-    font-size: 16px;
-}
 .menu-btn {
     margin: 10px 15px 10px;
     border: 1px solid black;
     padding: 10px;
     border-radius: 5px;
     width: 114px;
-}
-.btn-sign-in {
-    color: #fff;
-    padding: 13px 25px;
-    text-decoration: none;
-    border: none;
 }
 .btn-danger {
     background-color: #e20712;
@@ -64,25 +119,59 @@ hr {
     text-align: center;
     padding: 150px 30px 30px 30px;
     line-height: initial;
+    margin-top: 100px;
 }
 .left {
     margin: auto;
     /* padding: 150px; */
 }
+.sign-in-button,
+.language-option {
+    height: 50px;
+    width: 110px;
+    border-radius: 5px;
+}
+.language-option {
+    background: black;
+    color: #fff;
+    padding-left: 25px;
+    font-weight: 800;
+    font-family: cursive;
+}
+.sign-in-button {
+    background: red;
+    margin-left: 30px;
+}
+.sign-in-button a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 800;
+}
+.language-container {
+    position: relative;
+}
+.language-icon {
+    position: absolute;
+    z-index: 1;
+    color: #fff;
+    top: 18px;
+    left: 2px;
+    padding-left: 5px;
+}
 .main-header-text {
-    font-size: 50px;
+    font-size: 3.125rem;
     max-width: 585px;
-    font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Netflix Sans";
     margin: auto;
     font-weight: 800;
     margin-bottom: 30px;
 }
 .main-header-description {
-    font-size: 26px;
-    font-weight: 40px;
+    font-size: 1.625rem;
+    font-weight: 400px;
     margin-top: 10px;
     width: 540px;
-    font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Netflix Sans";
     /* margin: 20px auto; */
     font-weight: 400;
     line-height: normal;
@@ -91,10 +180,10 @@ hr {
     margin: 20px auto;
 }
 .description {
-    font-size: 19px;
+    font-size: 1.2rem;
     margin: 20px;
     font-weight: 400;
-    font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Netflix Sans";
     margin: auto;
     padding-bottom: 20px;
 }
@@ -115,9 +204,9 @@ input[type="text"],
 input[type="password"] {
     width: 450px;
     font-size: 16px;
-    height: 33px;
+    height: 32px;
     cursor: pointer;
-    padding: 20px;
+    padding: 20px 20px 20px 10px;
     border: none;
 }
 .login-form input[type="text"],
@@ -142,7 +231,7 @@ input[type="text"]:valid ~ label,
 input[type="password"]:focus ~ label,
 input[type="password"]:valid ~ label {
     font-size: 1em;
-    left: 20px;
+    left: 10px;
     top: 10px;
     border-radius: 20px;
 }
@@ -255,11 +344,7 @@ footer {
 }
 
 td {
-    padding: 20px 180px 20px 20px;
-}
-
-.footer .language-selector {
-    color: #757575;
+    padding: 20px 140px 20px 20px;
 }
 .faq {
     width: 900px;
@@ -273,6 +358,10 @@ td {
     margin-bottom: 1px;
     font-size: 26px;
     font-weight: 400;
+    color: #fff;
+}
+.faq .question {
+    width: 100%;
 }
 .faq .answer {
     padding: 1.2em;
@@ -294,9 +383,13 @@ td {
 .question-answer {
     margin: 15px;
 }
+.container-6 .first {
+    padding: 50px 30px 0px 30px;
+    margin-top: 0;
+}
 .sign-in-form {
     background: rgba(0, 0, 0, 0.75);
-    padding: 60px 30px;
+    padding: 30px 30px;
     margin-top: 170px;
 }
 .left {
@@ -304,6 +397,7 @@ td {
 }
 .input-container {
     padding-bottom: 50px;
+    cursor: pointer;
 }
 .btn-login {
     width: 95%;
@@ -318,9 +412,17 @@ td {
     display: flex;
     justify-content: space-between;
     padding: 15px;
+    color: #b3b3b3;
+}
+.remember-me {
+    font-size: 15px;
+    cursor: pointer;
+}
+input[type="checkbox"] {
+    margin-right: 10px;
 }
 form {
-    margin-bottom: 70px;
+    margin-bottom: 50px;
 }
 .other-option {
     font-size: 17px;
@@ -344,10 +446,52 @@ form {
     text-decoration: none;
     color: white;
 }
-.sign-up-link:hover,
+.sign-up-link:hover {
+    text-decoration: underline #fff;
+}
 .learn-more:hover {
     text-decoration: underline blue;
 }
 .learn-more {
     color: blue;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.need-help {
+    cursor: pointer;
+}
+.need-help:hover {
+    text-decoration: underline #757575;
+}
+.security {
+    line-height: 1.5rem;
+}
+.question:focus-within ~ .answer {
+    visibility: visible;
+    display: block;
+}
+.footer-language-container {
+    margin: 15px 10px;
+}
+.footer-language-container .language-icon,
+.footer-language-container .language-option {
+    color: #757575;
+}
+.m-10 {
+    margin: 10px;
+}
+.footer-item {
+    cursor: pointer;
+}
+.footer-item:hover {
+    text-decoration: underline;
+}
+.sign-in-form input[type="text"],
+.sign-in-form input[type="password"] {
+    background: #333;
+}
+.sign-in-form .main-header-text {
+    font-size: 32px;
+    margin: 30px 15px;
+    font-weight: 700;
 }

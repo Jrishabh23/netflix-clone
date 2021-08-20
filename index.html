@@ -10,35 +10,37 @@
         />
         <link rel="icon" href="./assests/images/nficon2016.ico" />
         <link rel="stylesheet" href="./assests/css/style.css" />
-        <script defer src="./assests/javascript/script.js"></script>
         <title>Netflix</title>
     </head>
     <body class="home-page">
         <header>
             <div class="header">
-                <div class="icon">
-                    <img
-                        alt="name-icon"
-                        src="assests/images/Netflix_Logo_PMS.png"
-                        height="100"
-                    />
+                <div class="netflix-icon-container">
+                    <svg
+                        viewBox="0 0 111 30"
+                        class="icon-netflix-logo"
+                        focusable="false"
+                    >
+                        <g id="netflix-logo">
+                            <path
+                                d="M105.06233,14.2806261 L110.999156,30 C109.249227,29.7497422 107.500234,29.4366857 105.718437,29.1554972 L102.374168,20.4686475 L98.9371075,28.4375293 C97.2499766,28.1563408 95.5928391,28.061674 93.9057081,27.8432843 L99.9372012,14.0931671 L94.4680851,-5.68434189e-14 L99.5313525,-5.68434189e-14 L102.593495,7.87421502 L105.874965,-5.68434189e-14 L110.999156,-5.68434189e-14 L105.06233,14.2806261 Z M90.4686475,-5.68434189e-14 L85.8749649,-5.68434189e-14 L85.8749649,27.2499766 C87.3746368,27.3437061 88.9371075,27.4055675 90.4686475,27.5930265 L90.4686475,-5.68434189e-14 Z M81.9055207,26.93692 C77.7186241,26.6557316 73.5307901,26.4064111 69.250164,26.3117443 L69.250164,-5.68434189e-14 L73.9366389,-5.68434189e-14 L73.9366389,21.8745899 C76.6248008,21.9373887 79.3120255,22.1557784 81.9055207,22.2804387 L81.9055207,26.93692 Z M64.2496954,10.6561065 L64.2496954,15.3435186 L57.8442216,15.3435186 L57.8442216,25.9996251 L53.2186709,25.9996251 L53.2186709,-5.68434189e-14 L66.3436123,-5.68434189e-14 L66.3436123,4.68741213 L57.8442216,4.68741213 L57.8442216,10.6561065 L64.2496954,10.6561065 Z M45.3435186,4.68741213 L45.3435186,26.2498828 C43.7810479,26.2498828 42.1876465,26.2498828 40.6561065,26.3117443 L40.6561065,4.68741213 L35.8121661,4.68741213 L35.8121661,-5.68434189e-14 L50.2183897,-5.68434189e-14 L50.2183897,4.68741213 L45.3435186,4.68741213 Z M30.749836,15.5928391 C28.687787,15.5928391 26.2498828,15.5928391 24.4999531,15.6875059 L24.4999531,22.6562939 C27.2499766,22.4678976 30,22.2495079 32.7809542,22.1557784 L32.7809542,26.6557316 L19.812541,27.6876933 L19.812541,-5.68434189e-14 L32.7809542,-5.68434189e-14 L32.7809542,4.68741213 L24.4999531,4.68741213 L24.4999531,10.9991564 C26.3126816,10.9991564 29.0936358,10.9054269 30.749836,10.9054269 L30.749836,15.5928391 Z M4.78114163,12.9684132 L4.78114163,29.3429562 C3.09401069,29.5313525 1.59340144,29.7497422 0,30 L0,-5.68434189e-14 L4.4690224,-5.68434189e-14 L10.562377,17.0315868 L10.562377,-5.68434189e-14 L15.2497891,-5.68434189e-14 L15.2497891,28.061674 C13.5935889,28.3437998 11.906458,28.4375293 10.1246602,28.6868498 L4.78114163,12.9684132 Z"
+                                id="Fill-14"
+                            ></path>
+                        </g>
+                    </svg>
                 </div>
                 <div class="menu">
-                    <div class="language">
-                        <select
-                            name="language"
-                            class="menu-btn language-selector"
-                        >
+                    <div class="language-container">
+                        <i class="fa fa-globe language-icon"></i>
+                        <select class="language-option">
                             <option value="english">English</option>
                             <option value="हिन्दी">हिन्दी</option>
                         </select>
                     </div>
-                    <div class="sign-in m-t-20">
-                        <a
-                            href="./sign_in.html"
-                            class="menu-btn btn-danger btn-sign-in"
-                            >Sign In</a
-                        >
+                    <div>
+                        <button class="sign-in-button">
+                            <a href="./sign_in.html" class="">Sign In</a>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -204,7 +206,7 @@
                 <div class="faq-container">
                     <div class="faq">
                         <div class="question-answer">
-                            <div
+                            <button
                                 class="question q-1"
                                 data-question="q-1-answer"
                             >
@@ -215,7 +217,7 @@
                                         aria-hidden="true"
                                     ></i
                                 ></span>
-                            </div>
+                            </button>
                             <div class="q-1-answer-details answer">
                                 Netflix is a streaming service that offers a
                                 wide variety of award-winning TV shows, movies,
@@ -228,7 +230,7 @@
                             </div>
                         </div>
                         <div class="question-answer">
-                            <div
+                            <button
                                 class="question q-2"
                                 data-question="q-2-answer"
                             >
@@ -239,7 +241,7 @@
                                         aria-hidden="true"
                                     ></i
                                 ></span>
-                            </div>
+                            </button>
                             <div class="q-2-answer-details answer">
                                 <p>
                                     Watch Netflix on your smartphone, tablet,
@@ -251,7 +253,7 @@
                             </div>
                         </div>
                         <div class="question-answer">
-                            <div
+                            <button
                                 class="question q-3"
                                 data-question="q-3-answer"
                             >
@@ -262,7 +264,7 @@
                                         aria-hidden="true"
                                     ></i
                                 ></span>
-                            </div>
+                            </button>
                             <div class="q-3-answer-details answer">
                                 <p>
                                     Watch anywhere, anytime, on an unlimited
@@ -285,7 +287,7 @@
                             </div>
                         </div>
                         <div class="question-answer">
-                            <div
+                            <button
                                 class="question q-4"
                                 data-question="q-4-answer"
                             >
@@ -296,7 +298,7 @@
                                         aria-hidden="true"
                                     ></i
                                 ></span>
-                            </div>
+                            </button>
                             <div class="q-4-answer-details answer">
                                 <p>
                                     Netflix is flexible. There are no annoying
@@ -308,7 +310,7 @@
                             </div>
                         </div>
                         <div class="question-answer">
-                            <div
+                            <button
                                 class="question q-5"
                                 data-question="q-5-answer"
                             >
@@ -319,7 +321,7 @@
                                         aria-hidden="true"
                                     ></i>
                                 </span>
-                            </div>
+                            </button>
                             <div class="q-5-answer-details answer">
                                 <p>
                                     Netflix has an extensive library of feature
@@ -330,7 +332,7 @@
                             </div>
                         </div>
                         <div class="question-answer">
-                            <div
+                            <button
                                 class="question q-6"
                                 data-question="q-6-answer"
                             >
@@ -341,7 +343,7 @@
                                         aria-hidden="true"
                                     ></i
                                 ></span>
-                            </div>
+                            </button>
                             <div class="q-6-answer-details answer">
                                 <p>
                                     The Netflix Kids experience is included in
@@ -420,18 +422,16 @@
                         <td class="footer-item"></td>
                     </tr>
                 </table>
-                <div>
-                    <div class="language">
-                        <select
-                            name="language"
-                            class="menu-btn language-selector"
-                        >
+                <div class="footer-language-container">
+                    <div class="language-container">
+                        <i class="fa fa-globe language-icon"></i>
+                        <select class="language-option">
                             <option value="english">English</option>
                             <option value="हिन्दी">हिन्दी</option>
                         </select>
                     </div>
                 </div>
-                <div>Netflix India</div>
+                <div class="m-10">Netflix India</div>
             </div>
         </footer>
     </body>
